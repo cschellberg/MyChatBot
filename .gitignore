@@ -1,0 +1,34 @@
+# === Python Environment ===
+.venv/
+venv/
+ENV/
+python/
+*.pyc
+__pycache__/
+
+# === IntelliJ / JetBrains IDE ===
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# === Hugging Face / Machine Learning Specific ===
+# Prevents committing massive downloaded model weights, tokens, and caches
+.cache/huggingface/
+huggingface_cache/
+.huggingface/
+*.bin
+*.pt
+*.onnx
+*.safetensors
+
+# === Local Environment & Keys ===
+# Never commit your Hugging Face API tokens or secrets!
+.env
+.env.local
+secrets.json
+
+# === Operating System files ===
+.DS_Store
+Thumbs.db
